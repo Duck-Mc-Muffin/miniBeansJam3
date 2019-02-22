@@ -203,6 +203,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217857268}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &266263073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8388212705910597987, guid: ffd5bc2e3f3a88f4190900b423aad101,
+    type: 3}
+  m_PrefabInstance: {fileID: 8388212705312711464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &277849534
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,9 +894,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349a36f3f11f77344bf6ba55b69d5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnArea: {x: 10, y: 10, z: 20}
-  fischfutter: {fileID: 8388212705910597987, guid: ffd5bc2e3f3a88f4190900b423aad101,
-    type: 3}
+  SpawnArea: {x: 5, y: 5, z: 10}
+  FischfutterPrefab: {fileID: 266263073}
+  SpawnDelay: 0.5
 --- !u!1001 &8388212705312711464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -957,6 +963,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388212705910597990, guid: ffd5bc2e3f3a88f4190900b423aad101,
+        type: 3}
+      propertyPath: DragRange.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388212705910597990, guid: ffd5bc2e3f3a88f4190900b423aad101,
+        type: 3}
+      propertyPath: downStrengthRange.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388212705910597990, guid: ffd5bc2e3f3a88f4190900b423aad101,
+        type: 3}
+      propertyPath: downStrengthRange.y
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffd5bc2e3f3a88f4190900b423aad101, type: 3}

@@ -6,15 +6,23 @@ public class SpawnController : MonoBehaviour
 {
     public Vector3 SpawnArea;
     public GameObject FischfutterPrefab;
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
+    public float SpawnDelay;
+
+    private float nextSpawn = 0;
 
     // Update is called once per frame
     private void Update()
     {
-        GameObject fischfutter = GameObject.Instantiate(FischfutterPrefab);
+        if (nextSpawn <= 0)
+        {
+            GameObject fischfutter = GameObject.Instantiate(FischfutterPrefab);
+
+            Vector3 randomPos = new Vector3(Random.Range(-SpawnArea.x, SpawnArea.x), SpawnArea.y + 5, Random.Range(-SpawnArea.z, SpawnArea.z));
+
+            fischfutter.transform.position = randomPos;
+
+            nextSpawn += SpawnDelay;
+        }
+        nextSpawn -= Time.deltaTime;
     }
 }
