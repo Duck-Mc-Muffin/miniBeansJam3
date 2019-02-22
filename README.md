@@ -1,2 +1,3 @@
-# miniBeansJam3
-Weekend Game Project
+# Mini BeansJam 3
+
+48 hour gamejam
