@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour
 {
     public float forwardSpeed = 7f, horizontalRotationSpeed = 0.6f, verticalRotationSpeed = 0.45f;
     public bool invert_X, invert_Y;
     //public float zRotStabelizing, zRotStabelizingThreshold;
-
-    //public Text ui_debug_text;
+    public UnityEvent PlayerCollided;
+    
     private Rigidbody phy;
+    private float collisionStayTime;
 
     private void Start()
     {
@@ -38,5 +39,17 @@ public class CharacterMovement : MonoBehaviour
         // Stabelize Z-Axis (Physics)
         //float zTilt = (Vector3.Angle(Vector3.up, transform.right) - 90) / 90;
         //if (Mathf.Abs(zTilt) > zRotStabelizingThreshold) phy.AddTorque(transform.forward * zRotStabelizing * zTilt, ForceMode.Force);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        collisionStayTime = 0f;
+        PlayerCollided.Invoke();
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        collisionStayTime += Time.deltaTime;
+        if (collisionStayTime > 1f) PlayerCollided.Invoke();
     }
 }
