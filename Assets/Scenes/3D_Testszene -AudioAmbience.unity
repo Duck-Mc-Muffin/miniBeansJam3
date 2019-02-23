@@ -811,6 +811,120 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &228246733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 228246734}
+  - component: {fileID: 228246736}
+  - component: {fileID: 228246735}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228246734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228246733}
+  m_LocalRotation: {x: 0.005233849, y: 0.07465196, z: -0.26386476, w: 0.9616523}
+  m_LocalPosition: {x: 37.88, y: -15.79, z: 27.81}
+  m_LocalScale: {x: 1.1559281, y: 0.82575995, z: 0.8610392}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 2.835, y: 8.1050005, z: -30.486002}
+--- !u!114 &228246735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228246733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &228246736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228246733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.908005, y: 20.989037, z: 12.486404}
+  m_Center: {x: -0.3466338, y: 6.764688, z: 1.0703644}
+--- !u!1 &233497194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233497195}
+  - component: {fileID: 233497197}
+  - component: {fileID: 233497196}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233497195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233497194}
+  m_LocalRotation: {x: -0.39790124, y: 0.35739022, z: 0.026701791, w: 0.8445317}
+  m_LocalPosition: {x: 26.672, y: -18.059, z: 6.7343}
+  m_LocalScale: {x: 0.6944333, y: 0.49608222, z: 0.5172765}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: -43.722004, y: 53.695004, z: -19.338001}
+--- !u!114 &233497196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233497194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &233497197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233497194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.080376, y: 22.640192, z: 12.486404}
+  m_Center: {x: -0.31791815, y: 5.939095, z: 1.0703883}
 --- !u!1 &294189943
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,12 +1002,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295770256}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -14.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339336035
 GameObject:
@@ -942,12 +1056,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339336035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -20.18, y: 19.95, z: 2.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &347238262
 PrefabInstance:
@@ -1979,6 +2093,47 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 553337062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &556276386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 556276387}
+  m_Layer: 0
+  m_Name: AmbienceSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &556276387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556276386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 295770258}
+  - {fileID: 339336037}
+  - {fileID: 1818822358}
+  - {fileID: 665632595}
+  - {fileID: 1028802754}
+  - {fileID: 1098167949}
+  - {fileID: 575296889}
+  - {fileID: 1648966807}
+  - {fileID: 1677869218}
+  - {fileID: 228246734}
+  - {fileID: 233497195}
+  m_Father: {fileID: 0}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564717943
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2164,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &575296888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575296889}
+  - component: {fileID: 575296891}
+  - component: {fileID: 575296890}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575296889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575296888}
+  m_LocalRotation: {x: -0, y: 0.024074275, z: -0, w: 0.9997102}
+  m_LocalPosition: {x: 42.05, y: -20.813, z: -19.2}
+  m_LocalScale: {x: 0.84570855, y: 0.79716396, z: 0.62421405}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 2.759, z: 0}
+--- !u!114 &575296890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575296888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &575296891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575296888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0714674, y: 7.9786777, z: 6.7045164}
+  m_Center: {x: -8.094909, y: 0.2594002, z: -0.37367353}
 --- !u!1001 &601581972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2353,6 +2565,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644141088}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &665632594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 665632595}
+  - component: {fileID: 665632597}
+  - component: {fileID: 665632596}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &665632595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665632594}
+  m_LocalRotation: {x: -0, y: 0.024074275, z: -0, w: 0.9997102}
+  m_LocalPosition: {x: -12.975708, y: -20.85, z: 33.854366}
+  m_LocalScale: {x: 1.1396314, y: 0.82576, z: 0.8610392}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 2.759, z: 0}
+--- !u!114 &665632596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665632594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &665632597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665632594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.527054, y: 7.8967104, z: 7.4824586}
+  m_Center: {x: 1.0436583, y: 0.21839108, z: 1.5506572}
 --- !u!1 &670383103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +4162,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1028802753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028802754}
+  - component: {fileID: 1028802756}
+  - component: {fileID: 1028802755}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1028802754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028802753}
+  m_LocalRotation: {x: -0, y: 0.024074275, z: -0, w: 0.9997102}
+  m_LocalPosition: {x: -14.74, y: -20.85, z: 15.02}
+  m_LocalScale: {x: 1.1559277, y: 0.82576, z: 0.8610392}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 2.759, z: 0}
+--- !u!114 &1028802755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028802753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1028802756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028802753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.908005, y: 23.815712, z: 12.486404}
+  m_Center: {x: -0.34661543, y: 8.177968, z: 1.0703646}
 --- !u!1001 &1050842405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3977,6 +4303,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09013401632954f44aaf9f135433b72a, type: 3}
+--- !u!1 &1098167948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1098167949}
+  - component: {fileID: 1098167951}
+  - component: {fileID: 1098167950}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1098167949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098167948}
+  m_LocalRotation: {x: -0, y: 0.024074275, z: -0, w: 0.9997102}
+  m_LocalPosition: {x: 42.46, y: -20.813, z: -10.777}
+  m_LocalScale: {x: 0.84570855, y: 0.79716396, z: 0.62421405}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 2.759, z: 0}
+--- !u!114 &1098167950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098167948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1098167951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098167948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.2983203, y: 10.072673, z: 6.442551}
+  m_Center: {x: -8.208332, y: 1.3063991, z: -0.5046562}
 --- !u!1 &1117953971
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,6 +5205,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09013401632954f44aaf9f135433b72a, type: 3}
+--- !u!1001 &1432392492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1470602903717022975, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248461770929042470, guid: 956e6ee8dbbe86b4f98edf63bce72ebd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 956e6ee8dbbe86b4f98edf63bce72ebd, type: 3}
 --- !u!1001 &1460167304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5341,6 +5793,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1648966806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648966807}
+  - component: {fileID: 1648966809}
+  - component: {fileID: 1648966808}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1648966807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648966806}
+  m_LocalRotation: {x: -0.0014299466, y: 0.019675715, z: 0.055344388, w: 0.9982724}
+  m_LocalPosition: {x: 49.85, y: -20.04, z: -19.52}
+  m_LocalScale: {x: 0.84570843, y: 0.79716384, z: 0.62421393}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -0.28800002, y: 2.242, z: 6.341}
+--- !u!114 &1648966808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648966806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1648966809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648966806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0714674, y: 5.768025, z: 6.7045164}
+  m_Center: {x: -8.094909, y: -2.4211197, z: -0.37367353}
 --- !u!1 &1657000597
 GameObject:
   m_ObjectHideFlags: 0
@@ -5455,6 +5964,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09013401632954f44aaf9f135433b72a, type: 3}
+--- !u!1 &1677869217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677869218}
+  - component: {fileID: 1677869220}
+  - component: {fileID: 1677869219}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677869218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677869217}
+  m_LocalRotation: {x: -0.0014299466, y: 0.019675715, z: 0.055344388, w: 0.9982724}
+  m_LocalPosition: {x: 51.23, y: -19.88, z: -11.43}
+  m_LocalScale: {x: 0.84570843, y: 0.79716384, z: 0.62421393}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -0.28800002, y: 2.242, z: 6.341}
+--- !u!114 &1677869219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677869217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1677869220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677869217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0714674, y: 5.768025, z: 6.7045164}
+  m_Center: {x: -8.094909, y: -2.4211197, z: -0.37367353}
 --- !u!1 &1688255579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,6 +6368,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1818822357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818822358}
+  - component: {fileID: 1818822359}
+  - component: {fileID: 1818822360}
+  m_Layer: 0
+  m_Name: TunnelSoundTrigger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1818822358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818822357}
+  m_LocalRotation: {x: -0, y: 0.045798734, z: -0, w: 0.9989507}
+  m_LocalPosition: {x: 2.9406, y: -20.85, z: -15.57}
+  m_LocalScale: {x: 1.1396312, y: 0.82576, z: 0.8610392}
+  m_Children: []
+  m_Father: {fileID: 556276387}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 5.2500005, z: 0}
+--- !u!65 &1818822359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818822357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.527054, y: 7.8967104, z: 7.4824586}
+  m_Center: {x: 1.0436583, y: 0.21839108, z: 1.5506572}
+--- !u!114 &1818822360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818822357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1ca5bb96e8bad4b9595a8c09615d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821840190
 GameObject:
   m_ObjectHideFlags: 0
