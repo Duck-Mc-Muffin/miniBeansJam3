@@ -11,6 +11,9 @@
     // Parameters
     public static readonly string TransitionParameter = "Transition";
 
+    // Snapshots
+    public static readonly string TunnelSnapshot = "snapshot:/Tunnel";
+
     // VCA'S
     public static readonly string VCA_MUSIC = "vca:/Music";
     public static readonly string VCA_SFX = "vca:/SFX";
