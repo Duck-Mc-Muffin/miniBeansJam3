@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnController : MonoBehaviour
+public class FischFutterSpawnController : MonoBehaviour
 {
     public Vector3 SpawnArea;
     public GameObject FischfutterPrefab;
     public float SpawnDelay;
+    public int MaxFutterSpawns;
 
     private float nextSpawn = 0;
 
@@ -23,6 +24,10 @@ public class SpawnController : MonoBehaviour
 
             nextSpawn += SpawnDelay;
         }
-        nextSpawn -= Time.deltaTime;
+
+        if (GameObject.FindGameObjectsWithTag("Fischfutter").Length < MaxFutterSpawns)
+        {
+            nextSpawn -= Time.deltaTime;
+        }
     }
 }
