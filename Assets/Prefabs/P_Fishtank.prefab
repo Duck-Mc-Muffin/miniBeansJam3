@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bb9c2e34745ef914e9f45e4d4c4b53ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.18199985
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bb9c2e34745ef914e9f45e4d4c4b53ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -198,6 +198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7465077299634464560}
     m_Modifications:
+    - target: {fileID: 100000, guid: d16bb9f2c60815140ab29f89c3f0e773, type: 3}
+      propertyPath: m_Name
+      value: S_Fishtank
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d16bb9f2c60815140ab29f89c3f0e773, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -249,10 +253,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: d16bb9f2c60815140ab29f89c3f0e773, type: 3}
       propertyPath: m_LocalScale.z
       value: 114.28854
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: d16bb9f2c60815140ab29f89c3f0e773, type: 3}
-      propertyPath: m_Name
-      value: S_Fishtank
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d16bb9f2c60815140ab29f89c3f0e773, type: 3}
       propertyPath: m_Materials.Array.data[0]
