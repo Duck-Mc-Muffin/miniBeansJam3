@@ -187,23 +187,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 939043818}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &241475553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 241475552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd244ec84c5203744a5cb526792099d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxTimeToLive: 60
-  foodTag: Food
-  foodTimeBonus: 10
-  txt_TTL: {fileID: 1259563081}
-  sld_TTL: {fileID: 1244091941}
 --- !u!1 &381628389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,58 +1016,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 241475553, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
+      propertyPath: txt_TTL
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnPlayerCollided
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: PlayerCollided.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: forwardSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: headBounceBack
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: zRotStabelizing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: zRotStabelizingThreshold
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: enemyTag
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: playerCollision
+      objectReference: {fileID: 1259563081}
+    - target: {fileID: 241475553, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
+      propertyPath: sld_TTL
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589141608, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
-      propertyPath: headBounceLayer.m_Bits
-      value: 311
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1244091941}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
 --- !u!4 &939043819 stripped
@@ -1203,7 +1142,7 @@ GameObject:
   - component: {fileID: 1152688046}
   - component: {fileID: 1152688045}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1597,24 +1536,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 1dd67474fb0aedf46ae336f3e6a11844, type: 3}
---- !u!1 &1650916277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1668903923930120473, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63,
-    type: 3}
-  m_PrefabInstance: {fileID: 939043818}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1650916278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650916277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b09dd83a136f774f951a1a3262676a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1729711726
 GameObject:
   m_ObjectHideFlags: 0

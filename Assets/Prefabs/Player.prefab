@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1668903923481291973}
   - component: {fileID: 1668903923481291998}
   - component: {fileID: 1589141608}
+  - component: {fileID: 241475553}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,11 +79,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f50856fb0710541a67cb68001e3f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 7
+  forwardSpeed: 15
   horizontalRotationSpeed: 0.6
   verticalRotationSpeed: 0.45
+  headBounceBack: 20
+  headBounceLayer:
+    serializedVersion: 2
+    m_Bits: 311
   invert_X: 0
   invert_Y: 0
+  zRotStabelizing: 1
+  zRotStabelizingThreshold: 0.05
+  enemyTag: Enemy
+  stunnKnockBack: 50
+  stunnTime: 5
+--- !u!114 &241475553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668903923481291999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd244ec84c5203744a5cb526792099d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTimeToLive: 60
+  foodTag: Food
+  foodTimeBonus: 10
+  txt_TTL: {fileID: 0}
+  sld_TTL: {fileID: 0}
 --- !u!1 &1668903923634960983
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668903923930120472}
+  - component: {fileID: 1650916278}
   m_Layer: 0
   m_Name: Camera Anker Pos
   m_TagString: Untagged
@@ -190,6 +218,18 @@ Transform:
   m_Father: {fileID: 1668903923481291971}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650916278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668903923930120473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b09dd83a136f774f951a1a3262676a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1668903924263592489
 GameObject:
   m_ObjectHideFlags: 0
