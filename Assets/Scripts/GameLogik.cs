@@ -41,7 +41,6 @@ public class GameLogik : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print(collision.transform.tag);
         if (collision.transform.tag == foodTag)
         {
             if (TimeToLive > maxTimeToLive) return;
