@@ -6,12 +6,12 @@ public class LookAtCamera : MonoBehaviour
 
     void Update()
     {
-        if (Camera.current == null)
+        if (Camera.main == null)
         {
             return;
         }
 
-        var target = Camera.current.transform.position;
+        var target = Camera.main.transform.position;
         if (lockHorizontal)
         {
             target.y = transform.position.y;

@@ -33,12 +33,12 @@ public class RandomMovement : MonoBehaviour
     {
         var positionMatrix = new[]
         {
-            Vector3.up,
-            Vector3.down,
             Vector3.left,
             Vector3.right,
-            Vector3.back, 
-            Vector3.forward
+            Vector3.forward,
+            Vector3.back,
+            Vector3.up,
+            Vector3.down,
         };
         var minPerlin = positionMatrix.Aggregate(Vector3.positiveInfinity, (min, next) => LocalPerlinNoise(min) < LocalPerlinNoise(next) ? min : next);
         var force = minPerlin;

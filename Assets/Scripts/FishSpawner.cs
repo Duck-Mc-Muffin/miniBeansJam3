@@ -17,7 +17,7 @@ public class FishSpawner : MonoBehaviour
         for (int i = 0; i < amount; i++)
         {
             var randomPos = RandomVector3(spawnArea.transform);
-            Instantiate(fishPrefab, randomPos, Quaternion.identity, transform);
+            var fish = Instantiate(fishPrefab, randomPos, Quaternion.identity, transform);
         }
     }
 
