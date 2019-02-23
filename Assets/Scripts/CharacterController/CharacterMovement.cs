@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public float forwardSpeed = 7f, horizontalRotationSpeed = 0.06f, verticalRotationSpeed = 0.45f;
+    public float forwardSpeed = 7f, horizontalRotationSpeed = 0.6f, verticalRotationSpeed = 0.45f;
     public bool invert_X, invert_Y;
     //public float zRotStabelizing, zRotStabelizingThreshold;
 

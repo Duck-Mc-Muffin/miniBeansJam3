@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform ankerPos, ankerLookAtPos;
-    public float posLerp;
+    public float posLerp = 0.05f;
 
     private void LateUpdate()
     {
