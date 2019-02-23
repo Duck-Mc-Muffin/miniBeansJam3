@@ -5,21 +5,36 @@ using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public float forwardSpeed = 7f, horizontalRotationSpeed = 0.6f, verticalRotationSpeed = 0.45f;
+    public float forwardSpeed = 7f, horizontalRotationSpeed = 0.6f, verticalRotationSpeed = 0.45f, headBounceBack = 2f;
+    public LayerMask headBounceLayer;
     public bool invert_X, invert_Y;
-    //public float zRotStabelizing, zRotStabelizingThreshold;
-    public UnityEvent PlayerCollided;
+    public float zRotStabelizing = 1f, zRotStabelizingThreshold = 0.05f;
+    public string enemyTag = "Enemy";
+    public float stunnKnockBack = 50f, stunnTime = 5f;
     
     private Rigidbody phy;
-    private float collisionStayTime;
+    private float headBounceBackRadius, headBounceDistance;
+    private float currentStunnTime;
+    private bool stunned;
 
     private void Start()
     {
         phy = GetComponent<Rigidbody>();
+        CapsuleCollider tmp = GetComponent<CapsuleCollider>();
+        headBounceBackRadius = tmp.radius * 0.7f;
+        headBounceDistance = tmp.height / 2f - tmp.radius + 0.2f;
     }
 
     private void FixedUpdate()
     {
+        // Stunn
+        if (stunned)
+        {
+            currentStunnTime += Time.deltaTime;
+            if (currentStunnTime > stunnTime) stunned = false;
+            else return;
+        }
+
         // Input
         if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -34,22 +49,31 @@ public class CharacterMovement : MonoBehaviour
         phy.AddForce(transform.forward * forwardSpeed, ForceMode.Force);
 
         // Stabelize Z-Axis
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0f);
+        //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0f);
 
         // Stabelize Z-Axis (Physics)
-        //float zTilt = (Vector3.Angle(Vector3.up, transform.right) - 90) / 90;
-        //if (Mathf.Abs(zTilt) > zRotStabelizingThreshold) phy.AddTorque(transform.forward * zRotStabelizing * zTilt, ForceMode.Force);
+        float zTilt = (Vector3.Angle(Vector3.up, transform.right) - 90) / 90;
+        if (Mathf.Abs(zTilt) > zRotStabelizingThreshold) phy.AddTorque(transform.forward * zRotStabelizing * zTilt, ForceMode.Force);
+
+        // Head bounce back
+        Ray headBounceRay = new Ray(transform.position, transform.forward);
+        if (Physics.SphereCast(headBounceRay, headBounceBackRadius, headBounceDistance, headBounceLayer))
+        {
+            phy.AddForce(-transform.forward * headBounceBack, ForceMode.Impulse);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        collisionStayTime = 0f;
-        PlayerCollided.Invoke();
+        if (collision.transform.tag == enemyTag) Stunn((transform.position - collision.transform.position).normalized);
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void Stunn(Vector3 dir)
     {
-        collisionStayTime += Time.deltaTime;
-        if (collisionStayTime > 1f) PlayerCollided.Invoke();
+        stunned = true;
+        currentStunnTime = 0f;
+        phy.velocity = Vector3.zero;
+        phy.AddForce(dir * stunnKnockBack, ForceMode.Impulse);
+        phy.AddTorque(Vector3.up * Random.Range(-5f, 5f), ForceMode.Impulse);
     }
 }

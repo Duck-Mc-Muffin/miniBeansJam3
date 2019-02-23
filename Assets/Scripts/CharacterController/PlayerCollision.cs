@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public Rigidbody player;
-    public float distance = 3f, knockBack = 3f;
+    public float distance = 3f;
 
     private Vector3 lastPoint;
 
@@ -21,10 +21,5 @@ public class PlayerCollision : MonoBehaviour
             transform.position = lastPoint;
             lastPoint = player.position;
         }
-    }
-
-    public void OnPlayerCollided()
-    {
-        player.AddForce((transform.position - player.position).normalized * knockBack, ForceMode.Impulse);
     }
 }

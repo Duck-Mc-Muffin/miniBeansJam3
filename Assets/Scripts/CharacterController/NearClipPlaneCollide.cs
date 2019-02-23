@@ -16,9 +16,6 @@ public class NearClipPlaneCollide : MonoBehaviour
 	void LateUpdate()
 	{
         // Object auf der lokalen Z-Achse positionieren.
-        Vector3 tmp = transform.parent.position/* + (Vector3)(transform.localToWorldMatrix * fixPoint)*/;
-        Debug.DrawLine(tmp, tmp + (transform.position - transform.parent.position));
-
 		RaycastHit hitInfo;
 		if (Physics.BoxCast(transform.parent.position, CameraBox(), transform.position - transform.parent.position, out hitInfo, transform.rotation, Mathf.Abs(fixPoint.z)))
 		{
