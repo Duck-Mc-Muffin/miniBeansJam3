@@ -6,16 +6,18 @@ public class FishSpawner : MonoBehaviour
     [Header("Logic")]
     public GameObject fishPrefab;
     public int amount = 10;
+    public GameObject spawnArea;
 
-    [Header("Editor Preview")] public bool drawGizmos = false;
+    [Header("Editor Preview")]
+    public bool drawSpawnArea = false;
     public Color gizmosColor = new Color(0f, 255f, 255f, 0.5f);
 
     void Start()
     {
         for (int i = 0; i < amount; i++)
         {
-            var randomPos = RandomVector3(transform);
-            var g = Instantiate(fishPrefab, randomPos, Quaternion.identity);
+            var randomPos = RandomVector3(spawnArea.transform);
+            Instantiate(fishPrefab, randomPos, Quaternion.identity, transform);
         }
     }
 
@@ -24,10 +26,10 @@ public class FishSpawner : MonoBehaviour
     /// </summary>
     void OnDrawGizmos()
     {
-        if (drawGizmos)
+        if (drawSpawnArea)
         {
             Gizmos.color = gizmosColor;
-            Gizmos.DrawCube(transform.position, transform.localScale);
+            Gizmos.DrawCube(spawnArea.transform.position, spawnArea.transform.localScale);
         }
     }
 
