@@ -9,9 +9,11 @@ public class HighscoreGet : MonoBehaviour
     private void Start()
     {
         IEnumerable<HighScore.Score> scores = HighScore.GetHighscores();
+        GetComponent<Text>().text = "\n";
         foreach (HighScore.Score item in scores)
         {
-            GetComponent<Text>().text += string.Format("{0}. {1}: {2}", item.Position + 1, item.Username, item.Points);
+            GetComponent<Text>().text += string.Format("{0}. {1}: {2}", item.Position, item.Username, item.Points);
+            GetComponent<Text>().text += "\n";
         }
     }
     

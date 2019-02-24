@@ -245,6 +245,14 @@ PrefabInstance:
       propertyPath: sceneIndex_DeathScreen
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 241475553, guid: 5475a4a157bdd56478a1c678484d3bef, type: 3}
+      propertyPath: maxTimeToLive
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 241475553, guid: 5475a4a157bdd56478a1c678484d3bef, type: 3}
+      propertyPath: foodTimeBonus
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5475a4a157bdd56478a1c678484d3bef, type: 3}
 --- !u!1 &10089481 stripped
@@ -7356,6 +7364,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -2.119995
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457106482322, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457106482322, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_Text
+      value: 21:12.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457106482322, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457106482322, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457088932607, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.9599915
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b35cfb48953fe4d8e1d538b3743187, type: 3}
