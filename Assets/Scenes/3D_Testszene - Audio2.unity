@@ -112,6 +112,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &7533269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7533270}
+  - component: {fileID: 7533272}
+  - component: {fileID: 7533271}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7533270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533269}
+  m_LocalRotation: {x: -0, y: -0.9991242, z: -0, w: -0.041842196}
+  m_LocalPosition: {x: -23.28, y: 9.98, z: -2.86}
+  m_LocalScale: {x: 1.1858501, y: 1.18585, z: 0.11858002}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: -184.79599, z: 0}
+--- !u!114 &7533271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7533272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533269}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 8.371252, z: 1}
+  m_Center: {x: -0.094588555, y: 3.6856222, z: 0.0000008473979}
 --- !u!1 &26299957
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +466,260 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 133213737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &166994039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783006615998102729, guid: bf3714657efead04dafb51968d05fa8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2519165948828577216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &166994043
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166994039}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5238071, y: 0.08332358}
+    oldSize: {x: 7.55, y: 20.49}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.6037248, y: 1.5203168}
+      - {x: -0.34616992, y: 1.7456774}
+      - {x: 0.3299116, y: 2.5505362}
+      - {x: 0.42649466, y: 2.711508}
+      - {x: -0.024226332, y: 2.87248}
+      - {x: -0.5071417, y: 2.518342}
+      - {x: -0.8612796, y: 2.3251758}
+      - {x: -0.99005705, y: 3.355395}
+      - {x: -0.92566836, y: 3.61295}
+      - {x: -0.539336, y: 3.4841726}
+      - {x: -0.24958684, y: 3.5807557}
+      - {x: 0.90941006, y: 4.5787807}
+      - {x: 1.5211028, y: 4.4821978}
+      - {x: 1.8752408, y: 4.5787807}
+      - {x: 1.8752408, y: 4.86853}
+      - {x: 1.5211028, y: 5.1904736}
+      - {x: 0.23332852, y: 5.2870564}
+      - {x: -0.8612796, y: 4.9007244}
+      - {x: -1.0544457, y: 4.9329185}
+      - {x: -0.8290853, y: 5.6411943}
+      - {x: 0.04016238, y: 5.673389}
+      - {x: 0.29771724, y: 5.7377777}
+      - {x: 0.49088338, y: 5.866555}
+      - {x: 0.49088338, y: 5.9953327}
+      - {x: 0.3299116, y: 6.220693}
+      - {x: 0.23332852, y: 6.2528872}
+      - {x: 0.007968025, y: 6.2528872}
+      - {x: -0.442753, y: 6.220693}
+      - {x: -0.18519811, y: 6.4460535}
+      - {x: 0.13674545, y: 6.285082}
+      - {x: 0.29771724, y: 6.220693}
+      - {x: 0.36210597, y: 6.220693}
+      - {x: 0.3943003, y: 6.1884985}
+      - {x: 0.81282693, y: 6.1884985}
+      - {x: 1.3279366, y: 6.3494706}
+      - {x: 1.8430464, y: 6.7036085}
+      - {x: 2.3581562, y: 7.122135}
+      - {x: 2.9054601, y: 7.4118843}
+      - {x: 3.517153, y: 7.508467}
+      - {x: 3.3883755, y: 7.830411}
+      - {x: 3.0986264, y: 7.8947997}
+      - {x: 2.8088772, y: 7.926994}
+      - {x: 2.3581562, y: 8.023577}
+      - {x: 2.1971843, y: 8.023577}
+      - {x: 1.6176859, y: 7.8947997}
+      - {x: 0.81282693, y: 7.4440784}
+      - {x: 0.8450213, y: 7.862605}
+      - {x: 1.1347705, y: 8.570881}
+      - {x: 1.9396294, y: 8.796242}
+      - {x: 2.2293787, y: 8.925019}
+      - {x: 3.1308208, y: 9.858655}
+      - {x: 3.5815418, y: 10.566931}
+      - {x: 3.5815418, y: 10.792292}
+      - {x: 3.3883755, y: 10.888875}
+      - {x: 2.9054601, y: 10.277182}
+      - {x: 2.0362124, y: 9.9874325}
+      - {x: 1.5211028, y: 9.89085}
+      - {x: 1.4245198, y: 10.180599}
+      - {x: 1.3923254, y: 10.599126}
+      - {x: 1.6176859, y: 10.7600975}
+      - {x: 2.004018, y: 11.114235}
+      - {x: 2.4225447, y: 11.693734}
+      - {x: 3.2274039, y: 12.917119}
+      - {x: 3.5493474, y: 13.14248}
+      - {x: 3.517153, y: 13.271257}
+      - {x: 3.3883755, y: 13.335646}
+      - {x: 2.9376545, y: 13.335646}
+      - {x: 2.5191278, y: 13.14248}
+      - {x: 2.004018, y: 12.62737}
+      - {x: 1.4889084, y: 12.369815}
+      - {x: 1.1991593, y: 12.080066}
+      - {x: 1.1347705, y: 12.369815}
+      - {x: 0.97379875, y: 12.820537}
+      - {x: 1.1025761, y: 12.949314}
+      - {x: 1.4245198, y: 13.561007}
+      - {x: 1.7464633, y: 14.333671}
+      - {x: 2.5835166, y: 14.8165865}
+      - {x: 3.2274039, y: 14.8165865}
+      - {x: 3.259598, y: 15.170724}
+      - {x: 3.0020432, y: 15.428279}
+      - {x: 2.7444885, y: 15.589251}
+      - {x: 1.9718238, y: 15.524862}
+      - {x: 1.3279366, y: 15.202919}
+      - {x: 1.0059931, y: 14.880975}
+      - {x: 0.6518552, y: 14.494643}
+      - {x: 0.42649466, y: 14.623421}
+      - {x: 1.6176859, y: 15.782417}
+      - {x: 1.5211028, y: 16.039972}
+      - {x: 0.8772157, y: 15.911195}
+      - {x: 0.3299116, y: 15.492668}
+      - {x: 0.2655229, y: 15.782417}
+      - {x: 0.16893981, y: 16.039972}
+      - {x: 0.90941006, y: 16.329721}
+      - {x: 1.1669649, y: 16.522888}
+      - {x: 1.5532972, y: 16.90922}
+      - {x: 1.810852, y: 17.42433}
+      - {x: 2.5513222, y: 17.907246}
+      - {x: 2.454739, y: 18.164799}
+      - {x: 2.3581562, y: 18.196995}
+      - {x: 1.7464633, y: 18.196995}
+      - {x: 1.5211028, y: 18.164799}
+      - {x: 1.2313536, y: 17.93944}
+      - {x: 0.74843824, y: 17.231163}
+      - {x: 0.20113418, y: 16.941414}
+      - {x: 0.007968025, y: 16.780441}
+      - {x: -0.05642069, y: 17.93944}
+      - {x: -0.47494733, y: 18.132605}
+      - {x: -0.70030785, y: 17.87505}
+      - {x: -0.7968909, y: 17.295551}
+      - {x: -0.5715304, y: 16.748247}
+      - {x: -1.2154175, y: 16.973608}
+      - {x: -2.2134426, y: 17.037996}
+      - {x: -2.986107, y: 16.748247}
+      - {x: -3.2758565, y: 16.426304}
+      - {x: -3.4368281, y: 16.007778}
+      - {x: -3.3080509, y: 15.911195}
+      - {x: -3.0826902, y: 15.911195}
+      - {x: -2.2778313, y: 16.233139}
+      - {x: -1.4085836, y: 16.233139}
+      - {x: -0.539336, y: 15.911195}
+      - {x: -0.24958684, y: 15.460474}
+      - {x: -0.4105586, y: 15.235113}
+      - {x: -0.9578627, y: 15.492668}
+      - {x: -1.2798063, y: 15.492668}
+      - {x: -1.440778, y: 15.267307}
+      - {x: -1.440778, y: 15.106336}
+      - {x: -1.1832232, y: 14.784392}
+      - {x: -0.76469654, y: 14.655615}
+      - {x: -0.15300377, y: 14.39806}
+      - {x: -0.05642069, y: 13.850756}
+      - {x: -0.2817812, y: 14.108311}
+      - {x: -0.8290853, y: 14.333671}
+      - {x: -1.4729724, y: 14.430254}
+      - {x: -2.2134426, y: 14.462448}
+      - {x: -2.9217186, y: 14.140505}
+      - {x: -3.243662, y: 13.689784}
+      - {x: -3.2758565, y: 13.432229}
+      - {x: -2.696358, y: 13.303452}
+      - {x: -2.0846653, y: 13.464423}
+      - {x: -0.5071417, y: 12.756147}
+      - {x: 0.04016238, y: 12.659564}
+      - {x: 0.2655229, y: 12.756147}
+      - {x: 0.71624386, y: 11.919094}
+      - {x: -0.37836426, y: 11.951288}
+      - {x: -1.1832232, y: 11.725928}
+      - {x: -1.9558878, y: 11.758122}
+      - {x: -1.9880822, y: 11.661539}
+      - {x: -1.9880822, y: 11.500567}
+      - {x: -1.9236934, y: 11.2752075}
+      - {x: -1.7627217, y: 11.082041}
+      - {x: -1.6017499, y: 10.985457}
+      - {x: -1.4085836, y: 10.888875}
+      - {x: -0.7968909, y: 10.856681}
+      - {x: 0.2655229, y: 11.114235}
+      - {x: 0.5552721, y: 10.953263}
+      - {x: 0.9416044, y: 10.695708}
+      - {x: 0.9416044, y: 10.341571}
+      - {x: 0.90941006, y: 10.051822}
+      - {x: 0.6518552, y: 10.148405}
+      - {x: -0.18519811, y: 10.534737}
+      - {x: -0.99005705, y: 10.470348}
+      - {x: -1.7627217, y: 10.051822}
+      - {x: -1.794916, y: 9.794267}
+      - {x: -1.6661385, y: 9.729878}
+      - {x: -1.3120006, y: 9.601101}
+      - {x: -0.66811347, y: 9.729878}
+      - {x: -0.05642069, y: 9.536712}
+      - {x: 0.13674545, y: 8.892825}
+      - {x: 0.36210597, y: 8.63527}
+      - {x: 0.5874665, y: 8.603075}
+      - {x: 0.3299116, y: 8.023577}
+      - {x: 0.07235674, y: 7.7016335}
+      - {x: -0.120809406, y: 8.377715}
+      - {x: -0.5715304, y: 8.957213}
+      - {x: -1.2798063, y: 9.279157}
+      - {x: -2.052471, y: 9.311352}
+      - {x: -2.6319692, y: 9.150379}
+      - {x: -3.0183015, y: 8.86063}
+      - {x: -3.1148846, y: 8.699658}
+      - {x: -2.4066088, y: 8.4742985}
+      - {x: -1.891499, y: 7.8947997}
+      - {x: -1.5051668, y: 7.186524}
+      - {x: -1.2476119, y: 6.832386}
+      - {x: -0.5715304, y: 6.7358027}
+      - {x: -0.92566836, y: 6.3816648}
+      - {x: -1.344195, y: 6.86458}
+      - {x: -1.794916, y: 7.1543293}
+      - {x: -2.0846653, y: 7.1543293}
+      - {x: -2.2778313, y: 7.0577464}
+      - {x: -2.3744144, y: 6.574831}
+      - {x: -1.9880822, y: 6.285082}
+      - {x: -1.2476119, y: 5.930944}
+      - {x: -1.2476119, y: 5.609}
+      - {x: -1.440778, y: 4.9007244}
+      - {x: -1.5051668, y: 5.1904736}
+      - {x: -2.1168597, y: 5.769972}
+      - {x: -3.501217, y: 5.8343606}
+      - {x: -3.5656056, y: 5.705583}
+      - {x: -3.5656056, y: 5.4802227}
+      - {x: -3.1148846, y: 4.965113}
+      - {x: -2.7607467, y: 4.321226}
+      - {x: -2.5675805, y: 4.12806}
+      - {x: -2.34222, y: 3.9992824}
+      - {x: -1.8271103, y: 3.967088}
+      - {x: -1.5373611, y: 4.12806}
+      - {x: -1.5373611, y: 3.0334516}
+      - {x: -1.4729724, y: 2.6471193}
+      - {x: -1.3763894, y: 2.0354266}
+      - {x: -1.9236934, y: 2.0354266}
+      - {x: -2.1812482, y: 1.9388435}
+      - {x: -2.503192, y: 1.713483}
+      - {x: -2.696358, y: 1.0052071}
+      - {x: -2.5997748, y: 0.8442353}
+      - {x: -1.6339442, y: 1.1983732}
+      - {x: -1.2154175, y: 1.4559281}
+      - {x: -0.70030785, y: 0.5866805}
+      - {x: 0.1045511, y: -0.6688995}
+      - {x: 0.16893981, y: -0.9264543}
+      - {x: 0.3299116, y: -0.99084306}
+      - {x: 0.6196608, y: -0.99084306}
+      - {x: 0.68404955, y: -0.89426}
+      - {x: 0.74843824, y: -0.41134462}
+      - {x: 0.45868903, y: 0.16815382}
 --- !u!1001 &317031262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1607,6 +1918,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1789510633}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &834043285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834043286}
+  - component: {fileID: 834043288}
+  - component: {fileID: 834043287}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834043286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834043285}
+  m_LocalRotation: {x: -0, y: -0.9801885, z: -0, w: 0.19806705}
+  m_LocalPosition: {x: -18.52, y: -13.08, z: -1.48}
+  m_LocalScale: {x: 1.1858501, y: 1.18585, z: 0.11858002}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: -157.15201, z: 0}
+--- !u!114 &834043287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834043285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &834043288
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834043285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 8.371252, z: 1}
+  m_Center: {x: -0.094588555, y: 3.6856222, z: 0.0000008473979}
 --- !u!1 &849278801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +2145,16 @@ Transform:
   - {fileID: 1576641536}
   - {fileID: 1482127109}
   - {fileID: 681656383}
+  - {fileID: 1807972709}
+  - {fileID: 1471180554}
+  - {fileID: 1118418104}
+  - {fileID: 1216517741}
+  - {fileID: 834043286}
+  - {fileID: 1815184869}
+  - {fileID: 7533270}
+  - {fileID: 2067866941}
+  - {fileID: 1760191659}
+  - {fileID: 1581934852}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1882,6 +2260,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3134627b2f67b3e4a8e5f88c3ad8ef63, type: 3}
+--- !u!1 &1118418103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118418104}
+  - component: {fileID: 1118418106}
+  - component: {fileID: 1118418105}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118418104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118418103}
+  m_LocalRotation: {x: -0, y: -0.51326305, z: -0, w: 0.8582314}
+  m_LocalPosition: {x: -11.76, y: -22.38, z: 30.35}
+  m_LocalScale: {x: 1.18585, y: 1.18585, z: 0.11858}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -61.763004, z: 0}
+--- !u!114 &1118418105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118418103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1118418106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118418103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 13.187605, z: 1}
+  m_Center: {x: -0.09458865, y: 6.0937967, z: 0.00000084948135}
 --- !u!1001 &1132557497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2062,6 +2497,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1186524787}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1216517740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216517741}
+  - component: {fileID: 1216517743}
+  - component: {fileID: 1216517742}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216517741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216517740}
+  m_LocalRotation: {x: -0, y: -0.9801885, z: -0, w: 0.19806705}
+  m_LocalPosition: {x: -23.57, y: -22.38, z: 0.65}
+  m_LocalScale: {x: 1.18585, y: 1.18585, z: 0.11858001}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -157.15201, z: 0}
+--- !u!114 &1216517742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216517740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1216517743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216517740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 8.371252, z: 1}
+  m_Center: {x: -0.094588555, y: 3.6856222, z: 0.0000008473979}
 --- !u!1 &1253363486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,6 +2781,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1460167304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1471180553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471180554}
+  - component: {fileID: 1471180556}
+  - component: {fileID: 1471180555}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1471180554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471180553}
+  m_LocalRotation: {x: -0, y: -0.038428187, z: -0, w: 0.99926144}
+  m_LocalPosition: {x: -6.08, y: -21.66, z: 26.43}
+  m_LocalScale: {x: 1.18585, y: 1.18585, z: 0.11858}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -4.405, z: 0}
+--- !u!114 &1471180555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471180553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1471180556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471180553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 13.187605, z: 1}
+  m_Center: {x: -0.09458865, y: 6.0937967, z: 0.00000084948135}
 --- !u!1 &1482127108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +3162,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.908005, y: 23.815712, z: 12.486404}
   m_Center: {x: -0.34661543, y: 8.177968, z: 1.0703646}
+--- !u!1 &1581934851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581934852}
+  - component: {fileID: 1581934854}
+  - component: {fileID: 1581934853}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1581934852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581934851}
+  m_LocalRotation: {x: -0, y: -0.72835076, z: -0, w: 0.6852045}
+  m_LocalPosition: {x: 27.26, y: -8.89, z: -15.29}
+  m_LocalScale: {x: 1.185851, y: 1.18585, z: 0.11858008}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: -93.497, z: 0}
+--- !u!114 &1581934853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581934851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1581934854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581934851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6238163, y: 8.282591, z: 1}
+  m_Center: {x: 0.16978344, y: 3.64129, z: 0.00000073722964}
 --- !u!1 &1587017599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +3462,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1750039404}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1760191658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760191659}
+  - component: {fileID: 1760191661}
+  - component: {fileID: 1760191660}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760191659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760191658}
+  m_LocalRotation: {x: -0, y: -0.7283508, z: -0, w: 0.68520457}
+  m_LocalPosition: {x: 27.39, y: -20.89, z: -17.48}
+  m_LocalScale: {x: 1.1858503, y: 1.18585, z: 0.118580036}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: -93.497, z: 0}
+--- !u!114 &1760191660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760191658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1760191661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760191658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6238163, y: 8.282591, z: 1}
+  m_Center: {x: 0.16978344, y: 3.64129, z: 0.00000073722964}
 --- !u!1001 &1789510633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2969,6 +3632,120 @@ Transform:
   m_Father: {fileID: 381628390}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807972708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807972709}
+  - component: {fileID: 1807972711}
+  - component: {fileID: 1807972710}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807972709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807972708}
+  m_LocalRotation: {x: -0, y: -0.038428187, z: -0, w: 0.99926144}
+  m_LocalPosition: {x: 0.21, y: -21.66, z: 28.12}
+  m_LocalScale: {x: 1.1858475, y: 1.1858475, z: 0.11858474}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -4.405, z: 0}
+--- !u!114 &1807972710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807972708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1807972711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807972708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6280813, y: 13.187604, z: 1}
+  m_Center: {x: -0.09300858, y: 6.0937967, z: 0.0000010987158}
+--- !u!1 &1815184868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815184869}
+  - component: {fileID: 1815184871}
+  - component: {fileID: 1815184870}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815184869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815184868}
+  m_LocalRotation: {x: -0, y: -0.9801885, z: -0, w: 0.19806705}
+  m_LocalPosition: {x: -22.99, y: -4.07, z: 0.4}
+  m_LocalScale: {x: 1.1858501, y: 1.18585, z: 0.11858002}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: -157.15201, z: 0}
+--- !u!114 &1815184870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815184868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1815184871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815184868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.673346, y: 8.371252, z: 1}
+  m_Center: {x: -0.094588555, y: 3.6856222, z: 0.0000008473979}
 --- !u!4 &1844169015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6264356378570765921, guid: 879961767b43db34a8f9c4cd9c89f6e8,
@@ -3181,6 +3958,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2052260306}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2067866940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067866941}
+  - component: {fileID: 2067866943}
+  - component: {fileID: 2067866942}
+  m_Layer: 0
+  m_Name: PlantSoundTrigger8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067866941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067866940}
+  m_LocalRotation: {x: -0, y: -0.5855872, z: -0, w: 0.81060946}
+  m_LocalPosition: {x: 28.93468, y: -20.89, z: -12.063767}
+  m_LocalScale: {x: 1.18585, y: 1.18585, z: 0.11858}
+  m_Children: []
+  m_Father: {fileID: 900528663}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: -71.689, z: 0}
+--- !u!114 &2067866942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067866940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e40672c4286f974c9a702cca497ecf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2067866943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067866940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6238163, y: 8.282591, z: 1}
+  m_Center: {x: 0.16978344, y: 3.64129, z: 0.00000073722964}
 --- !u!1001 &2107877540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3390,6 +4224,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kelps
       objectReference: {fileID: 0}
+    - target: {fileID: 2519165949067381605, guid: bf3714657efead04dafb51968d05fa8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2519165949067381606, guid: bf3714657efead04dafb51968d05fa8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3444,6 +4283,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783006614993947771, guid: bf3714657efead04dafb51968d05fa8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783006615998102729, guid: bf3714657efead04dafb51968d05fa8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf3714657efead04dafb51968d05fa8f, type: 3}
