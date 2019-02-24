@@ -10,8 +10,15 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void HighScore()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void Exit()
     {
         Application.Quit();
     }
+
+
 }
