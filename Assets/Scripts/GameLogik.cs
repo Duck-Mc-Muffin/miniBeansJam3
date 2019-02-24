@@ -28,7 +28,7 @@ public class GameLogik : MonoBehaviour
             timeToLive = value;
             if (timeToLive <= 0)
             {
-                PlayerPrefs.SetInt("TimeInt", Mathf.FloorToInt(timeToLive * 100));
+                PlayerPrefs.SetInt("TimeInt", Mathf.FloorToInt(currentScoreTime * 100));
                 timeToLive = 0;
                 CharacterMovement.instance.enabled = false;
                 PlayerPrefs.SetString("LastTime", txt_Score.text);
