@@ -50,7 +50,6 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic()
         {
-
             FMOD.Studio.PLAYBACK_STATE _music;
             music.getPlaybackState(out _music);
             if (_music != FMOD.Studio.PLAYBACK_STATE.PLAYING)
