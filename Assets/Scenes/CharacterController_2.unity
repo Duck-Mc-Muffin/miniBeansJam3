@@ -5245,6 +5245,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5350073310606067821, guid: d566802eba566534ab6c26f29f87386a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b915903bd19b294ebc81a8d3ea46ef5, type: 2}
+    - target: {fileID: 645892446436238747, guid: d566802eba566534ab6c26f29f87386a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a93abc0ea60834e4b9c9235a92f982d0,
+        type: 3}
     - target: {fileID: 6407416510187309096, guid: d566802eba566534ab6c26f29f87386a,
         type: 3}
       propertyPath: target
@@ -5689,7 +5700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 645892446436238744, guid: a6fa48997296e134da7b2c95484504b6,
     type: 3}
-  amount: 20
+  amount: 30
   spawnArea: {fileID: 1570539424}
   drawSpawnArea: 0
   gizmosColor: {r: 0, g: 255, b: 255, a: 0.5}
