@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameLogik : MonoBehaviour
 {
-    public float maxTimeToLive;
+    public static GameLogik instance; 
+
+    public float maxTimeToLive, gameOverPause;
     public string foodTag = "Food";
     public float foodTimeBonus = 10f;
-    public ParticleSystem bubbleBurst, bubbleTrail;
+    public ParticleSystem bubbleBurst;
 
-    public Text txt_TTL;
+    public Text txt_Score;
     public Slider sld_TTL;
+    public int sceneIndex_DeathScreen;
 
-    public float bubbleTrailVel = 10f, test;
-
-    private float timeToLive;
+    private float timeToLive, currentScoreTime, currentGameOverTime;
     private Rigidbody phy;
 
     public float TimeToLive
@@ -24,33 +26,60 @@ public class GameLogik : MonoBehaviour
         set
         {
             timeToLive = value;
-            if (timeToLive <= 0) print("Player died!");
-            txt_TTL.text = timeToLive > maxTimeToLive ? maxTimeToLive.ToString() : timeToLive.ToString("N2").Replace(',', '.'); // TODO: Formatierung ändern.
-            txt_TTL.text += " sec.";
+            if (timeToLive <= 0)
+            {
+                timeToLive = 0;
+                CharacterMovement.instance.enabled = false;
+                PlayerPrefs.SetString("LastTime", txt_Score.text);
+                print(PlayerPrefs.GetString("LastTime"));
+            }
             sld_TTL.value = timeToLive > maxTimeToLive ? 1 : timeToLive / maxTimeToLive;
         }
+    }
+
+    public float ScoreTime
+    {
+        get { return currentScoreTime; }
+        set
+        {
+            currentScoreTime = value;
+            int minutes = Mathf.FloorToInt(currentScoreTime) / 60;
+            float seconds = (currentScoreTime - minutes * 60);
+            txt_Score.text = minutes + ":" + (seconds < 10 ? "0" + seconds.ToString("N2") : seconds.ToString("N2")).Replace(',', '.'); // TODO: Formatierung ändern.
+        }
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     private void Start()
     {
         TimeToLive = maxTimeToLive;
         phy = GetComponent<Rigidbody>();
+        ScoreTime = 0;
     }
 
     private void Update()
     {
-        TimeToLive -= Time.deltaTime;
-
-        test = phy.velocity.magnitude;
-        if (phy.velocity.magnitude > bubbleTrailVel && !bubbleTrail.isPlaying) bubbleTrail.Play();
-        else if (phy.velocity.magnitude < bubbleTrailVel && bubbleTrail.isPlaying) bubbleTrail.Stop();
+        if (TimeToLive > 0)
+        {
+            ScoreTime += Time.deltaTime;
+            TimeToLive -= Time.deltaTime;
+        }
+        else
+        {
+            currentGameOverTime += Time.deltaTime;
+            if (currentGameOverTime > gameOverPause) SceneManager.LoadScene(sceneIndex_DeathScreen);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == foodTag)
         {
-            if (TimeToLive > maxTimeToLive) return;
+            if (TimeToLive > maxTimeToLive || TimeToLive <= 0) return;
             TimeToLive += foodTimeBonus;
             Destroy(collision.gameObject);
             bubbleBurst.transform.position = collision.contacts[0].point;
