@@ -17,6 +17,7 @@ public class FischFutterSpawnController : MonoBehaviour
         if (nextSpawn <= 0)
         {
             GameObject fischfutter = GameObject.Instantiate(FischfutterPrefab);
+            fischfutter.transform.parent = this.gameObject.transform;
 
             Vector3 randomPos = transform.position + new Vector3(Random.Range(-SpawnArea.x, SpawnArea.x), SpawnArea.y, Random.Range(-SpawnArea.z, SpawnArea.z));
 
