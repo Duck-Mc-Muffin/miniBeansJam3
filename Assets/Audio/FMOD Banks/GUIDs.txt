@@ -1,6 +1,7 @@
 {b0491336-6f36-4643-8abd-fa6a203c19ad} event:/player/plop
 {dda3adff-8a7d-43e7-8138-add7bb3b7c77} event:/player/dash
 {6fe04ad6-dbf3-4da9-8558-f4aa930548a2} event:/player/plant
+{473c5e8d-3e19-47d4-959f-e42d0fc9df86} event:/player/fish
 {b491db29-83fb-47b0-95b9-cb29b6204edb} event:/ambience/ambience_event
 {925e3ab8-e64f-4c99-953d-1782c14169ce} event:/ambience/filter
 {8095cd06-bce3-4e1e-9fc8-524acbcea722} event:/music_event

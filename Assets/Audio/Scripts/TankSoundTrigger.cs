@@ -10,6 +10,7 @@ public class TankSoundTrigger : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.GlassImpactSound, this.gameObject);
+            FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FishImpactSound, this.gameObject);
         }
     }
 }

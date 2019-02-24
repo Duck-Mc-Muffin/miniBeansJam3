@@ -8,6 +8,7 @@
     public static readonly string DashSound = "event:/player/dash";
     public static readonly string GlassImpactSound = "event:/player/plop";
     public static readonly string PlantImpactSound = "event:/player/plant";
+    public static readonly string FishImpactSound = "event:/player/fish";
 
     // Parameters
     public static readonly string TransitionParameter = "Transition";
