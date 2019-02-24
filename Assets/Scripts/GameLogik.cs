@@ -25,8 +25,8 @@ public class GameLogik : MonoBehaviour
         {
             timeToLive = value;
             if (timeToLive <= 0) print("Player died!");
-            txt_TTL.text = timeToLive > maxTimeToLive ? maxTimeToLive.ToString() : timeToLive.ToString("N2");
-            txt_TTL.text += " Sec.";
+            txt_TTL.text = timeToLive > maxTimeToLive ? maxTimeToLive.ToString() : timeToLive.ToString("N2").Replace(',', '.'); // TODO: Formatierung ändern.
+            txt_TTL.text += " sec.";
             sld_TTL.value = timeToLive > maxTimeToLive ? 1 : timeToLive / maxTimeToLive;
         }
     }
