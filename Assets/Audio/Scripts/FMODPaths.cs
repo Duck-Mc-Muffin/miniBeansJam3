@@ -7,6 +7,7 @@
     // Player
     public static readonly string DashSound = "event:/player/dash";
     public static readonly string GlassImpactSound = "event:/player/plop";
+    public static readonly string PlantImpactSound = "event:/player/plant";
 
     // Parameters
     public static readonly string TransitionParameter = "Transition";
