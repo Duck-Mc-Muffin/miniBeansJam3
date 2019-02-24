@@ -18,14 +18,14 @@ public class FischFutterSpawnController : MonoBehaviour
         {
             GameObject fischfutter = GameObject.Instantiate(FischfutterPrefab);
 
-            Vector3 randomPos = new Vector3(Random.Range(-SpawnArea.x, SpawnArea.x), SpawnArea.y + 5, Random.Range(-SpawnArea.z, SpawnArea.z));
+            Vector3 randomPos = transform.position + new Vector3(Random.Range(-SpawnArea.x, SpawnArea.x), SpawnArea.y, Random.Range(-SpawnArea.z, SpawnArea.z));
 
             fischfutter.transform.position = randomPos;
 
             nextSpawn += SpawnDelay;
         }
 
-        if (GameObject.FindGameObjectsWithTag("Fischfutter").Length < MaxFutterSpawns)
+        if (GameObject.FindGameObjectsWithTag("Food").Length < MaxFutterSpawns)
         {
             nextSpawn -= Time.deltaTime;
         }
