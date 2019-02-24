@@ -28,6 +28,7 @@ public class GameLogik : MonoBehaviour
             txt_TTL.text = timeToLive > maxTimeToLive ? maxTimeToLive.ToString() : timeToLive.ToString("N2").Replace(',', '.'); // TODO: Formatierung ändern.
             txt_TTL.text += " sec.";
             sld_TTL.value = timeToLive > maxTimeToLive ? 1 : timeToLive / maxTimeToLive;
+            AudioManager.instance.SetParameterFloat(AudioManager.instance.music, FMODPaths.TimeParameter, TimeToLive);
         }
     }
 

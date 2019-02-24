@@ -12,6 +12,7 @@
 
     // Parameters
     public static readonly string TransitionParameter = "Transition";
+    public static readonly string TimeParameter = "Time";
 
     // Snapshots
     public static readonly string TunnelSnapshot = "snapshot:/Tunnel";
