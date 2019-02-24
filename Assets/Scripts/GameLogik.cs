@@ -34,6 +34,7 @@ public class GameLogik : MonoBehaviour
                 print(PlayerPrefs.GetString("LastTime"));
             }
             sld_TTL.value = timeToLive > maxTimeToLive ? 1 : timeToLive / maxTimeToLive;
+            AudioManager.instance.SetParameterFloat(AudioManager.instance.music, FMODPaths.TimeParameter, TimeToLive);
         }
     }
 
@@ -84,6 +85,7 @@ public class GameLogik : MonoBehaviour
             Destroy(collision.gameObject);
             bubbleBurst.transform.position = collision.contacts[0].point;
             bubbleBurst.Play();
+            FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FoodBubbleSound, this.gameObject);
         }
     }
 }

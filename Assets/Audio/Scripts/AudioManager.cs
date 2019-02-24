@@ -79,7 +79,7 @@ public class AudioManager : MonoBehaviour
         _parameter.setValue(value);
     }
 
-    public void SetParameterFloat(FMOD.Studio.EventInstance instance, string parameter, int value)
+    public void SetParameterFloat(FMOD.Studio.EventInstance instance, string parameter, float value)
     {
         FMOD.Studio.ParameterInstance _parameter;
         instance.getParameter(parameter, out _parameter);

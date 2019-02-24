@@ -9,9 +9,11 @@
     public static readonly string GlassImpactSound = "event:/player/plop";
     public static readonly string PlantImpactSound = "event:/player/plant";
     public static readonly string FishImpactSound = "event:/player/fish";
+    public static readonly string FoodBubbleSound = "event:/player/bubbles";
 
     // Parameters
     public static readonly string TransitionParameter = "Transition";
+    public static readonly string TimeParameter = "Time";
 
     // Snapshots
     public static readonly string TunnelSnapshot = "snapshot:/Tunnel";
