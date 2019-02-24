@@ -9,9 +9,6 @@ public class Fischfutter : MonoBehaviour
     public Vector2 downStrengthRange;
     public Vector2 DragRange;
 
-    [HideInInspector]
-    public float maxY;
-
     private float randomForceStrength;
     private float randomDownStrength;
 
@@ -29,7 +26,9 @@ public class Fischfutter : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.LookAt(new Vector3(0, transform.position.y, 0), new Vector3(0, 1, 0));
+        Vector3 lookAtPos = new Vector3(transform.parent.position.x, transform.position.y, transform.parent.position.z);
+        Debug.Log("LookAt: " + lookAtPos);
+        transform.LookAt(lookAtPos);
         GetComponent<Rigidbody>().AddRelativeForce(new Vector3(randomForceStrength, 0, 0), ForceMode.Force);
         GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, randomForceStrength), ForceMode.Force);
     }

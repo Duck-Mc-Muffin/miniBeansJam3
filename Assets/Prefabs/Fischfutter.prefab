@@ -124,10 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2056ee0723a33124baad448f16a0c30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceStrengthRange: {x: 1, y: 1.5}
-  downStrengthRange: {x: 1000, y: 2000}
-  DragRange: {x: 0.1, y: 0.2}
-  maxY: 0
+  forceStrengthRange: {x: 5, y: 8}
+  downStrengthRange: {x: 1500, y: 2500}
+  DragRange: {x: 0.2, y: 0.5}
 --- !u!114 &3405521417235933126
 MonoBehaviour:
   m_ObjectHideFlags: 0

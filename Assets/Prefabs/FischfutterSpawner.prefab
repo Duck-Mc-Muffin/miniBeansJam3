@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: FischfutterSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -43,8 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349a36f3f11f77344bf6ba55b69d5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnArea: {x: 38, y: 30, z: 18}
+  SpawnArea: {x: 40, y: 0, z: 31}
   FischfutterPrefab: {fileID: 8388212705910597987, guid: ffd5bc2e3f3a88f4190900b423aad101,
     type: 3}
   SpawnDelay: 0.5
-  MaxFutterSpawns: 20
+  MaxFutterSpawns: 100
