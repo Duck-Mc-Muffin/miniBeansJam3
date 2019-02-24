@@ -4,6 +4,7 @@
 {473c5e8d-3e19-47d4-959f-e42d0fc9df86} event:/player/fish
 {6fe04ad6-dbf3-4da9-8558-f4aa930548a2} event:/player/plant
 {b0491336-6f36-4643-8abd-fa6a203c19ad} event:/player/plop
+{58429a84-6e88-4bf5-8adc-8ad21a25fb04} event:/player/bubbles
 {8095cd06-bce3-4e1e-9fc8-524acbcea722} event:/music_event
 {66eaec40-aa7b-4d3c-9745-0261c022e47a} bus:/
 {2de99120-e923-4b2b-924f-26eaa82780ed} bus:/Ambience

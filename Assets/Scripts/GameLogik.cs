@@ -56,6 +56,7 @@ public class GameLogik : MonoBehaviour
             Destroy(collision.gameObject);
             bubbleBurst.transform.position = collision.contacts[0].point;
             bubbleBurst.Play();
+            FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FoodBubbleSound, this.gameObject);
         }
     }
 }
