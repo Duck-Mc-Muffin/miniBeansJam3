@@ -11,7 +11,7 @@ public class HighscoreGet : MonoBehaviour
         IEnumerable<HighScore.Score> scores = HighScore.GetHighscores();
         foreach (HighScore.Score item in scores)
         {
-            GetComponent<Text>().text += string.Format("{0}. {1}: {2}", item.Position, item.Username, item.Points);
+            GetComponent<Text>().text += string.Format("{0}. {1}: {2}", item.Position + 1, item.Username, item.Points);
         }
     }
     

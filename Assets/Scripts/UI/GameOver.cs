@@ -20,6 +20,8 @@ public class GameOver : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(playerName.text))
         {
+            print(PlayerPrefs.GetInt("TimeInt"));
+            return;
             HighScore.AddScore("C62A1190B91BC6D55417EDAFA8856C0BD9C93108", PlayerPrefs.GetInt("TimeInt"), playerName.text);
         }
         SceneManager.LoadScene(0);

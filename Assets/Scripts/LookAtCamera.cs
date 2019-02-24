@@ -4,7 +4,7 @@ public class LookAtCamera : MonoBehaviour
 {
     public bool lockHorizontal = false;
 
-    void Update()
+    void LateUpdate()
     {
         if (Camera.main == null)
         {

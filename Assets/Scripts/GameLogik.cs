@@ -28,10 +28,10 @@ public class GameLogik : MonoBehaviour
             timeToLive = value;
             if (timeToLive <= 0)
             {
+                PlayerPrefs.SetInt("TimeInt", Mathf.FloorToInt(timeToLive * 100));
                 timeToLive = 0;
                 CharacterMovement.instance.enabled = false;
                 PlayerPrefs.SetString("LastTime", txt_Score.text);
-                PlayerPrefs.SetInt("TimeInt", Mathf.FloorToInt(timeToLive * 100));
             }
             sld_TTL.value = timeToLive > maxTimeToLive ? 1 : timeToLive / maxTimeToLive;
             AudioManager.instance.SetParameterFloat(AudioManager.instance.music, FMODPaths.TimeParameter, TimeToLive);
