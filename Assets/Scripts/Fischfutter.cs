@@ -27,7 +27,7 @@ public class Fischfutter : MonoBehaviour
     private void Update()
     {
         Vector3 lookAtPos = new Vector3(transform.parent.position.x, transform.position.y, transform.parent.position.z);
-        Debug.Log("LookAt: " + lookAtPos);
+        //Debug.Log("LookAt: " + lookAtPos);
         transform.LookAt(lookAtPos);
         GetComponent<Rigidbody>().AddRelativeForce(new Vector3(randomForceStrength, 0, 0), ForceMode.Force);
         GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, randomForceStrength), ForceMode.Force);

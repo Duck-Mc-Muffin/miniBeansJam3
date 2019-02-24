@@ -4864,11 +4864,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTimeToLive: 60
+  gameOverPause: 5
   foodTag: Food
   foodTimeBonus: 10
   bubbleBurst: {fileID: 1980582816}
-  txt_TTL: {fileID: 0}
+  txt_Score: {fileID: 0}
   sld_TTL: {fileID: 0}
+  sceneIndex_DeathScreen: 0
 --- !u!1 &1668903923930120473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,11 +5110,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8106923806999198361, guid: 10ed66f176a0be84eb808556783687e6,
+        type: 3}
+      propertyPath: bubbleTrail
+      value: 
+      objectReference: {fileID: 1905632813}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ed66f176a0be84eb808556783687e6, type: 3}
 --- !u!4 &1905632811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4946126995861193609, guid: 10ed66f176a0be84eb808556783687e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4946126997766235554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1905632813 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4946126995861193615, guid: 10ed66f176a0be84eb808556783687e6,
     type: 3}
   m_PrefabInstance: {fileID: 4946126997766235554}
   m_PrefabAsset: {fileID: 0}
