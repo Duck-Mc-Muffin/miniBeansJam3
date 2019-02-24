@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [CustomEditor(typeof(AudioManager))]  
-public class CustomInspectorScript : Editor
+public class CustomAudioInspectorScript : Editor
 {
     public override void OnInspectorGUI()
     {
