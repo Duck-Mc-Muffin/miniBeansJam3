@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Food
+  - Glas
   layers:
   - Default
   - TransparentFX

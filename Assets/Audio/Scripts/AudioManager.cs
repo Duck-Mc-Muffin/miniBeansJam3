@@ -34,6 +34,11 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        PlayMusic();
+    }
+
     void Update()
     {
         FMODUnity.RuntimeManager.GetVCA(FMODPaths.VCA_MUSIC).setVolume(musicVolume); // 0 - 1f

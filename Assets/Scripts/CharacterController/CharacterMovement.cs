@@ -11,7 +11,6 @@ public class CharacterMovement : MonoBehaviour
     public LayerMask headBounceLayer;
     public bool invert_X, invert_Y;
     public float zRotStabelizing = 1f, zRotStabelizingThreshold = 0.05f;
-    public string enemyTag = "Enemy";
     public float stunnKnockBack = 50f, stunnTime = 5f;
     
     private Rigidbody phy;
@@ -72,7 +71,18 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == enemyTag) Stunn((transform.position - collision.transform.position).normalized);
+        switch (collision.transform.tag)
+        {
+            case "Enemy":
+                FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FishImpactSound, this.gameObject);
+                Stunn((transform.position - collision.transform.position).normalized);
+                break;
+
+            case "Glas":
+                FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.GlassImpactSound, this.gameObject);
+                FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FishImpactSound, this.gameObject);
+                break;
+        }
     }
 
     private void Stunn(Vector3 dir)
