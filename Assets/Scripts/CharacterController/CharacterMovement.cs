@@ -76,5 +76,6 @@ public class CharacterMovement : MonoBehaviour
         phy.AddForce(dir * stunnKnockBack, ForceMode.Impulse);
         phy.AddTorque(Vector3.up * Random.Range(-5f, 5f), ForceMode.Impulse);
         FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.DashSound, this.gameObject);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(FMODPaths.FishImpactSound, this.gameObject);
     }
 }
