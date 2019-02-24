@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public static CharacterMovement instance;
+
     public float forwardSpeed = 7f, horizontalRotationSpeed = 0.6f, verticalRotationSpeed = 0.45f, headBounceBack = 2f;
     public LayerMask headBounceLayer;
     public bool invert_X, invert_Y;
@@ -16,6 +18,11 @@ public class CharacterMovement : MonoBehaviour
     private float headBounceBackRadius, headBounceDistance;
     private float currentStunnTime;
     private bool stunned;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

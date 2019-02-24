@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class GameLogik : MonoBehaviour
 {
+    public static GameLogik instance; 
+
     public float maxTimeToLive;
     public string foodTag = "Food";
     public float foodTimeBonus = 10f;
-    public ParticleSystem bubbleBurst, bubbleTrail;
+    public ParticleSystem bubbleBurst;
 
     public Text txt_TTL;
     public Slider sld_TTL;
-
-    public float bubbleTrailVel = 10f, test;
 
     private float timeToLive;
     private Rigidbody phy;
@@ -31,6 +31,11 @@ public class GameLogik : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         TimeToLive = maxTimeToLive;
@@ -40,10 +45,6 @@ public class GameLogik : MonoBehaviour
     private void Update()
     {
         TimeToLive -= Time.deltaTime;
-
-        test = phy.velocity.magnitude;
-        if (phy.velocity.magnitude > bubbleTrailVel && !bubbleTrail.isPlaying) bubbleTrail.Play();
-        else if (phy.velocity.magnitude < bubbleTrailVel && bubbleTrail.isPlaying) bubbleTrail.Stop();
     }
 
     private void OnCollisionEnter(Collision collision)
