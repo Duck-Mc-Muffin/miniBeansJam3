@@ -6786,6 +6786,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 916518457106482332, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.1200104
+      objectReference: {fileID: 0}
+    - target: {fileID: 916518457088932607, guid: d6b35cfb48953fe4d8e1d538b3743187,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.5999756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6b35cfb48953fe4d8e1d538b3743187, type: 3}
 --- !u!114 &1435090237 stripped
@@ -7680,12 +7690,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FischfutterSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 5231916920171735179, guid: 058a9cd5e1348c3478776b4e79a37388,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 5231916920171735178, guid: 058a9cd5e1348c3478776b4e79a37388,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7740,21 +7744,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5231916920171735177, guid: 058a9cd5e1348c3478776b4e79a37388,
-        type: 3}
-      propertyPath: SpawnArea.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5231916920171735177, guid: 058a9cd5e1348c3478776b4e79a37388,
-        type: 3}
-      propertyPath: SpawnArea.x
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5231916920171735177, guid: 058a9cd5e1348c3478776b4e79a37388,
-        type: 3}
-      propertyPath: SpawnArea.z
-      value: 31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 058a9cd5e1348c3478776b4e79a37388, type: 3}
