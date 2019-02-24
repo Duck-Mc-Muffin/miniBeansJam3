@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2908710758088118022}
   - component: {fileID: 8388212705910597990}
   - component: {fileID: 3405521417235933126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fischfutter
   m_TagString: Food
   m_Icon: {fileID: 0}
