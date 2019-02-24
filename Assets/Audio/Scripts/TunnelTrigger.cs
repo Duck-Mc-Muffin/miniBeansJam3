@@ -10,7 +10,7 @@ public class TunnelTrigger : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
 
-        if (collider.gameObject.name == "Player")
+        if (collider.gameObject.name == "Player" || collider.gameObject.name == "Player_v2")
         {
           tunnelSnapshot = FMODUnity.RuntimeManager.CreateInstance(FMODPaths.TunnelSnapshot);
             tunnelSnapshot.start();
@@ -19,7 +19,7 @@ public class TunnelTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-        if (collider.gameObject.name == "Player")
+        if (collider.gameObject.name == "Player" || collider.gameObject.name == "Player_v2")
         {
             tunnelSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
