@@ -8,12 +8,15 @@ public class GameLogik : MonoBehaviour
     public float maxTimeToLive;
     public string foodTag = "Food";
     public float foodTimeBonus = 10f;
-    //public ParticleSystem particles;
-
-    private float timeToLive;
+    public ParticleSystem bubbleBurst, bubbleTrail;
 
     public Text txt_TTL;
     public Slider sld_TTL;
+
+    public float bubbleTrailVel = 10f, test;
+
+    private float timeToLive;
+    private Rigidbody phy;
 
     public float TimeToLive
     {
@@ -30,13 +33,17 @@ public class GameLogik : MonoBehaviour
 
     private void Start()
     {
-        //particles = GetComponentInChildren<ParticleSystem>();
         TimeToLive = maxTimeToLive;
+        phy = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
         TimeToLive -= Time.deltaTime;
+
+        test = phy.velocity.magnitude;
+        if (phy.velocity.magnitude > bubbleTrailVel && !bubbleTrail.isPlaying) bubbleTrail.Play();
+        else if (phy.velocity.magnitude < bubbleTrailVel && bubbleTrail.isPlaying) bubbleTrail.Stop();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -46,8 +53,8 @@ public class GameLogik : MonoBehaviour
             if (TimeToLive > maxTimeToLive) return;
             TimeToLive += foodTimeBonus;
             Destroy(collision.gameObject);
-            //particles.transform.position = collision.contacts[0].point;
-            //particles.Play();
+            bubbleBurst.transform.position = collision.contacts[0].point;
+            bubbleBurst.Play();
         }
     }
 }
