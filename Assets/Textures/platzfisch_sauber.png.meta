@@ -1,21 +1,17 @@
 fileFormatVersion: 2
-guid: a93abc0ea60834e4b9c9235a92f982d0
+guid: 13265a9a9d77fee4ea3ef2d0be4a3ac5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fish_sprite_orange_0
-    21300002: fish_sprite_orange_1
-    21300004: fish_sprite_orange_2
-    21300006: fish_sprite_orange_3
-    21300008: fish_sprite_orange_4
-    21300010: fish_sprite_orange_5
-    21300012: fish_sprite_orange_6
-    21300014: fish_sprite_orange_7
-    21300016: fish_sprite_orange_8
-    21300018: fish_sprite_orange_9
-    21300020: fish_sprite_orange_10
-    21300022: fish_sprite_orange_11
-    21300024: fish_sprite_orange_12
-    21300026: fish_sprite_orange_13
+    21300000: platzfisch_sauber_0
+    21300002: platzfisch_sauber_1
+    21300004: platzfisch_sauber_2
+    21300006: platzfisch_sauber_3
+    21300008: platzfisch_sauber_4
+    21300010: platzfisch_sauber_5
+    21300012: platzfisch_sauber_6
+    21300014: platzfisch_sauber_7
+    21300016: platzfisch_sauber_8
+    21300018: platzfisch_sauber_9
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -59,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,281 +116,201 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fish_sprite_orange_0
+      name: platzfisch_sauber_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 3488
-        width: 800
-        height: 686
+        x: 9
+        y: 3579
+        width: 830
+        height: 476
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df1ac7a8e28d0594bb2fd26dbbe5a451
+      spriteID: 6df5ad0ea30aac445bc91e71706f1616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_1
+      name: platzfisch_sauber_1
       rect:
         serializedVersion: 2
-        x: 851
-        y: 3507
-        width: 823
-        height: 652
+        x: 860
+        y: 3586
+        width: 824
+        height: 469
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a88a563e913d864ab34dd2199eb6b50
+      spriteID: 3e871797d8ddf424688ec0729f3297ca
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_2
+      name: platzfisch_sauber_2
       rect:
         serializedVersion: 2
-        x: 83
-        y: 2603
-        width: 671
-        height: 775
+        x: 212
+        y: 2738
+        width: 383
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cfbf57471250ac4faa898c96dad961e
+      spriteID: bb6bcfec514a06e42be7646128b63890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_3
+      name: platzfisch_sauber_3
       rect:
         serializedVersion: 2
-        x: 922
-        y: 2622
-        width: 692
-        height: 708
+        x: 1063
+        y: 2738
+        width: 382
+        height: 456
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf76c510ca57d84aa5cfb567da62de3
+      spriteID: efbb05f7d19ccc441b94c8bbc713d878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_4
+      name: platzfisch_sauber_4
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1743
-        width: 732
-        height: 772
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4de40c69768462a44b52d403ac3e22f8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fish_sprite_orange_5
-      rect:
-        serializedVersion: 2
-        x: 909
-        y: 1763
-        width: 705
+        x: 179
+        y: 1735
+        width: 446
         height: 773
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b6d430beb1cdfe4aba6f6ffc547048b
+      spriteID: 64bb50780f37def43bedef1feb83f159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_6
+      name: platzfisch_sauber_5
       rect:
         serializedVersion: 2
-        x: 57
-        y: 884
-        width: 694
-        height: 790
+        x: 1048
+        y: 1737
+        width: 444
+        height: 771
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9636abea763c3484e97d282d8bd372f8
+      spriteID: 7a017246b9aa1f64ba3449ff557cef5d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_7
+      name: platzfisch_sauber_6
       rect:
         serializedVersion: 2
-        x: 787
-        y: 1394
-        width: 5
-        height: 4
+        x: 190
+        y: 887
+        width: 445
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd0012b3577fa864ca306c713cebed7c
+      spriteID: df8c83c92a68d354d93831006ff07a6c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_8
+      name: platzfisch_sauber_7
       rect:
         serializedVersion: 2
-        x: 949
-        y: 888
-        width: 629
-        height: 790
+        x: 1056
+        y: 887
+        width: 446
+        height: 765
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0015ce608e95c74c9c05b29ab300076
+      spriteID: d8168b945e65fa0498d35b1490ff11dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_9
+      name: platzfisch_sauber_8
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 1397
-        width: 4
-        height: 5
+        x: 210
+        y: 225
+        width: 382
+        height: 455
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab3536da1270487439fdaac5092fb59b
+      spriteID: 65e45c8b933db8440b64d4f3ce00488b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fish_sprite_orange_10
+      name: platzfisch_sauber_9
       rect:
         serializedVersion: 2
-        x: 83
-        y: 599
-        width: 5
-        height: 4
+        x: 1061
+        y: 225
+        width: 382
+        height: 455
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5845836d962b874fbd8b50f5f109275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fish_sprite_orange_11
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 32
-        width: 630
-        height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08d4839d13d94144d8a61c54941f2c09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fish_sprite_orange_12
-      rect:
-        serializedVersion: 2
-        x: 935
-        y: 595
-        width: 6
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2ce7a88af538e948b38f540d72f3c6a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fish_sprite_orange_13
-      rect:
-        serializedVersion: 2
-        x: 972
-        y: 28
-        width: 615
-        height: 800
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec74e16abdd7cf34bb03d9b0cf48559b
+      spriteID: 4e67251f42c8e104d9635cd46c85585c
       vertices: []
       indices: 
       edges: []
@@ -402,7 +318,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: accf4116881d77c41a6b7de27abf5df3
+    spriteID: d8491553c1c95dc46bcd984fe09ad653
     vertices: []
     indices: 
     edges: []

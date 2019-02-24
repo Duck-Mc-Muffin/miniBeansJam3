@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 2021478846881014421}
   - component: {fileID: 1367090595182277929}
   - component: {fileID: 8107240250294378927}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a93abc0ea60834e4b9c9235a92f982d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13265a9a9d77fee4ea3ef2d0be4a3ac5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,7 +139,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &1367090595182277929
 Animator:
